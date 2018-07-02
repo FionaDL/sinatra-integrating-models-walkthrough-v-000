@@ -6,4 +6,4 @@
 
 <h2>Consonants:<%consonant_count=@analyzed_text.count_of_consonants%> <%=consonant_count%></h2>
 
-<h2>Most Common Letter: _____ used _____ times</h2>
+<h2>Most Common Letter: <%common_letter=@analyzed_text.most_used_letter.keys%> <%amount=@analyzed_text.most_used_letter.values%> <%=common_letter%> used <%=amount%> times.</h2>
